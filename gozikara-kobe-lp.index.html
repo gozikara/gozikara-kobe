@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GOZIKARA KOBE｜神戸市中央区の経営者・役員向け 早朝出張コンディショニング</title>
+  <meta name="description" content="神戸市中央区の経営者・役員向け。朝5:00 / 7:15、完全出張の90分コンディショニング。鍼灸・整体/姿勢調整・体幹トレーニングを状態に合わせて組み合わせ。初回体験9,900円（税込）。" />
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --bg-soft: #121212;
+      --line: #2a2a2a;
+      --text: #f3f0e8;
+      --muted: #c9c1b0;
+      --subtle: #9f9889;
+      --gold: #b89a5e;
+      --gold-deep: #8d7342;
+      --white: #ffffff;
+      --max: 1120px;
+      --radius: 18px;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family:
+        "Hiragino Sans",
+        "Noto Sans JP",
+        "Yu Gothic",
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        sans-serif;
+      line-height: 1.9;
+      letter-spacing: 0.02em;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    img {
+      width: 100%;
+      display: block;
+      height: auto;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .wrap {
+      width: min(calc(100% - 32px), var(--max));
+      margin: 0 auto;
+    }
+    .section {
+      padding: 72px 0;
+      border-top: 1px solid var(--line);
+    }
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--gold);
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    .section-title {
+      margin: 0 0 18px;
+      font-family:
+        "Yu Mincho",
+        "Hiragino Mincho ProN",
+        "Noto Serif JP",
+        serif;
+      font-size: clamp(28px, 4vw, 42px);
+      font-weight: 500;
+      line-height: 1.35;
+      letter-spacing: 0.04em;
+    }
+    .section-lead {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    .hero {
+      position: relative;
+      padding-bottom: 36px;
+      border-bottom: 1px solid var(--line);
+    }
+    .hero-media {
+      position: relative;
+      min-height: 420px;
+      height: 56vh;
+      max-height: 680px;
+      overflow: hidden;
+      background: #0b0b0b;
+    }
+    .hero-media::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(to bottom, rgba(0,0,0,0.34) 0%, rgba(0,0,0,0.58) 55%, rgba(0,0,0,0.88) 100%);
+    }
+    .hero-media img {
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      filter: saturate(0.92) brightness(0.86);
+    }
+    .hero-card-wrap {
+      position: relative;
+      margin-top: -116px;
+      z-index: 2;
+    }
+    .hero-card {
+      background: rgba(10, 10, 10, 0.94);
+      border: 1px solid var(--line);
+      padding: 28px 22px 24px;
+    }
+    .hero-title {
+      margin: 0 0 14px;
+      font-family:
+        "Yu Mincho",
+        "Hiragino Mincho ProN",
+        "Noto Serif JP",
+        serif;
+      font-size: clamp(32px, 6.2vw, 60px);
+      font-weight: 500;
+      line-height: 1.28;
+      letter-spacing: 0.05em;
+    }
+    .hero-lead {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+    .chip {
+      border: 1px solid #38342d;
+      color: #efe7d7;
+      background: #15120d;
+      padding: 8px 12px;
+      font-size: 12px;
+      line-height: 1.4;
+      white-space: nowrap;
+    }
+    .cta-box {
+      margin-top: 26px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 56px;
+      padding: 16px 18px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 15px;
+      transition: opacity .2s ease, transform .2s ease;
+      text-align: center;
+    }
+    .btn:hover {
+      opacity: 0.92;
+      transform: translateY(-1px);
+    }
+    .btn-primary {
+      background: var(--gold);
+      color: #111111;
+    }
+    .btn-secondary {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid #5a4b2d;
+    }
+    .cta-note {
+      margin: 10px 0 0;
+      color: var(--subtle);
+      font-size: 12px;
+      text-align: center;
+    }
+    .safe-note {
+      margin: 12px 0 0;
+      color: #e8ddc5;
+      font-size: 12px;
+      text-align: center;
+    }
+    .grid-2,
+    .grid-3 {
+      display: grid;
+      gap: 18px;
+    }
+    .card {
+      border: 1px solid var(--line);
+      background: var(--bg-soft);
+      overflow: hidden;
+    }
+    .card-body {
+      padding: 20px 18px 18px;
+    }
+    .card-title {
+      margin: 0 0 8px;
+      font-size: 18px;
+      line-height: 1.5;
+      font-weight: 700;
+      color: var(--white);
+    }
+    .card-text {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .split {
+      display: grid;
+      gap: 24px;
+      align-items: start;
+    }
+    .profile {
+      display: grid;
+      gap: 20px;
+      align-items: start;
+    }
+    .profile-image {
+      border: 1px solid var(--line);
+      overflow: hidden;
+      background: #111;
+    }
+    .profile-image img {
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: center top;
+    }
+    .profile-box {
+      border: 1px solid var(--line);
+      background: var(--bg-soft);
+      padding: 22px 18px;
+    }
+    .profile-role {
+      margin: 0 0 10px;
+      color: var(--gold);
+      font-size: 13px;
+      letter-spacing: 0.08em;
+    }
+    .profile-heading {
+      margin: 0 0 14px;
+      font-size: 22px;
+      line-height: 1.5;
+      font-weight: 700;
+    }
+    .profile-text {
+      margin: 0 0 16px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .credential-list,
+    .fit-list,
+    .condition-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+    .credential-list li,
+    .fit-list li,
+    .condition-list li {
+      padding-top: 10px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .credential-list li:first-child,
+    .fit-list li:first-child,
+    .condition-list li:first-child {
+      padding-top: 0;
+      border-top: 0;
+    }
+    .highlight-box {
+      border: 1px solid #473c26;
+      background: #15120d;
+      padding: 18px;
+    }
+    .highlight-title {
+      margin: 0 0 8px;
+      color: #efe1bd;
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .highlight-text {
+      margin: 0;
+      color: #ddd2bc;
+      font-size: 14px;
+    }
+    .price-box {
+      border: 1px solid #4b3f27;
+      background: #15120d;
+      padding: 22px 18px;
+    }
+    .price-label {
+      margin: 0;
+      color: #efe1bd;
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .price {
+      margin: 8px 0 0;
+      font-family:
+        "Yu Mincho",
+        "Hiragino Mincho ProN",
+        "Noto Serif JP",
+        serif;
+      font-size: clamp(34px, 8vw, 52px);
+      line-height: 1.2;
+      font-weight: 500;
+      color: var(--white);
+    }
+    .price-sub {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .faq {
+      display: grid;
+      gap: 14px;
+    }
+    .faq-item {
+      border: 1px solid var(--line);
+      background: var(--bg-soft);
+      padding: 18px 16px;
+    }
+    .faq-q {
+      margin: 0 0 10px;
+      color: var(--white);
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.6;
+    }
+    .faq-a {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .final-cta {
+      position: relative;
+      overflow: hidden;
+      border-top: 1px solid var(--line);
+    }
+    .final-cta-media {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+    .final-cta-media::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.74);
+    }
+    .final-cta-media img {
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      filter: brightness(0.7) saturate(0.95);
+    }
+    .final-cta-inner {
+      position: relative;
+      z-index: 1;
+      padding: 84px 0;
+    }
+    .final-cta-box {
+      border: 1px solid rgba(184, 154, 94, 0.34);
+      background: rgba(10, 10, 10, 0.88);
+      padding: 30px 22px;
+    }
+    .final-copy {
+      margin: 0 0 10px;
+      font-family:
+        "Yu Mincho",
+        "Hiragino Mincho ProN",
+        "Noto Serif JP",
+        serif;
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.45;
+      letter-spacing: 0.05em;
+      font-weight: 500;
+    }
+    .final-text {
+      margin: 0 0 22px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    footer {
+      padding: 22px 0 100px;
+      color: var(--subtle);
+      font-size: 12px;
+      text-align: center;
+      border-top: 1px solid var(--line);
+    }
+    .sticky-cta {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 40;
+      padding: 10px 12px 12px;
+      background: rgba(10, 10, 10, 0.96);
+      border-top: 1px solid #2f2a22;
+    }
+    .sticky-cta .btn {
+      min-height: 54px;
+      font-size: 14px;
+    }
+    .sticky-note {
+      margin: 8px 0 0;
+      text-align: center;
+      color: var(--subtle);
+      font-size: 11px;
+    }
+    @media (min-width: 768px) {
+      .wrap {
+        width: min(calc(100% - 64px), var(--max));
+      }
+      .hero-card {
+        padding: 40px 40px 34px;
+      }
+      .grid-2 {
+        grid-template-columns: 1fr 1fr;
+      }
+      .grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .split {
+        grid-template-columns: 1.1fr 0.9fr;
+      }
+      .profile {
+        grid-template-columns: 360px 1fr;
+      }
+      .sticky-cta {
+        display: none;
+      }
+      footer {
+        padding-bottom: 40px;
+      }
+    }
+    @media (max-width: 767px) {
+      body {
+        padding-bottom: 94px;
+      }
+      .hero-card-wrap {
+        margin-top: -90px;
+      }
+      .hero-media {
+        min-height: 360px;
+        height: 48vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-media">
+      <img src="https://www.genspark.ai/api/files/s/sjwiOE4T" alt="神戸の朝の風景" />
+    </div>
+    <div class="hero-card-wrap">
+      <div class="wrap">
+        <div class="hero-card">
+          <p class="eyebrow">GOZIKARA KOBE / 神戸市中央区の経営者・役員向け</p>
+          <h1 class="hero-title">経営者が整う時間は、<br>仕事の前にある。</h1>
+          <p class="hero-lead">
+            GOZIKARAは、神戸市中央区の経営者・役員のための、超早朝・完全出張型コンディショニングです。
+            朝5:00 / 7:15の90分で、鍼灸・整体/姿勢調整・体幹トレーニングを状態に合わせて組み合わせ、
+            朝から仕事に向かいやすい状態づくりをお手伝いします。
+          </p>
+          <div class="chips">
+            <span class="chip">神戸市中央区の経営者・役員向け</span>
+            <span class="chip">平日朝 5:00 / 7:15</span>
+            <span class="chip">90分</span>
+            <span class="chip">1日2枠のみ</span>
+            <span class="chip">完全出張</span>
+            <span class="chip">初回 9,900円（税込）</span>
+          </div>
+          <div class="cta-box">
+            <a class="btn btn-primary" href="https://lin.ee/zzgg3hn" target="_blank" rel="noopener">初回体験を希望する</a>
+            <p class="cta-note">LINE追加後、体験希望フォームへ進めます</p>
+            <p class="safe-note">無理な継続提案はありません</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section">
+      <div class="wrap split">
+        <div>
+          <p class="eyebrow">About GOZIKARA</p>
+          <h2 class="section-title">GOZIKARAとは何か</h2>
+          <p class="section-lead">
+            GOZIKARAは、単なる出張整体ではありません。
+            経営者が、仕事前に自分を整えるための時間として設計した、朝専用のコンディショニングです。
+          </p>
+          <div style="height:16px;"></div>
+          <p class="section-lead">
+            体の違和感だけを見るのではなく、その日の集中しやすさ、姿勢の安定、思考の切り替えやすさまで見据えながら、
+            その朝の状態に合わせて内容を組み立てます。
+          </p>
+          <div style="height:16px;"></div>
+          <p class="section-lead">
+            「健康のために何かを足す」のではなく、
+            仕事を始める前に、自分の土台を静かに整える。
+            そのための90分です。
+          </p>
+        </div>
+        <div class="highlight-box">
+          <h3 class="highlight-title">GOZIKARAの考え方</h3>
+          <p class="highlight-text">
+            仕事終わりに疲れを引きずったまま整えるのではなく、
+            仕事が始まる前に整えておく。
+            GOZIKARAは、その発想で設計されたサービスです。
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap">
+        <p class="eyebrow">Why Morning</p>
+        <h2 class="section-title">なぜ、仕事終わりではなく朝なのか</h2>
+        <p class="section-lead">
+          経営者や役員は、日中に多くの判断を重ねます。だからこそ、疲れてから整えるより、
+          仕事に入る前の静かな時間に、姿勢・呼吸・体の使い方を見直しておく方が合う方もいます。
+        </p>
+        <div style="height:18px;"></div>
+        <p class="section-lead">
+          朝の90分で土台を整えておくことで、その日の仕事に入りやすくなる。
+          GOZIKARAは、そうした感覚を大切にした設計です。
+        </p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap">
+        <p class="eyebrow">90 Minutes</p>
+        <h2 class="section-title">90分で行う内容</h2>
+        <p class="section-lead">
+          毎回同じ内容を当てはめるのではなく、その日の状態に合わせて組み合わせます。
+        </p>
+        <div class="grid-3" style="margin-top:28px;">
+          <article class="card">
+            <img src="images/treatment-acupuncture.jpg" alt="整体・姿勢調整の施術風景" />
+            <div class="card-body">
+              <h3 class="card-title">整体・姿勢調整</h3>
+              <p class="card-text">
+                体の緊張や使い方の偏りを見ながら、姿勢や動きの土台を整えていきます。
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="images/treatment-main.jpg" alt="鍼灸の施術風景" />
+            <div class="card-body">
+              <h3 class="card-title">鍼灸</h3>
+              <p class="card-text">
+                状態に応じて、負担の少ない方法で取り入れます。刺激の強さも無理なく調整します。
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="images/treatment-posture.jpg" alt="体幹トレーニングの風景" />
+            <div class="card-body">
+              <h3 class="card-title">体幹トレーニング</h3>
+              <p class="card-text">
+                ただほぐすだけで終わらず、必要に応じて支えやすい体の使い方まで整えます。
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap grid-2">
+        <div class="card">
+          <div class="card-body">
+            <p class="eyebrow" style="margin-bottom:10px;">For You</p>
+            <h2 class="section-title" style="font-size:30px; margin-bottom:14px;">こんな方に向いています</h2>
+            <ul class="fit-list">
+              <li>神戸市中央区で活動する経営者・役員の方</li>
+              <li>仕事が始まる前に、自分の状態を整える時間を持ちたい方</li>
+              <li>朝から集中しやすい感覚をつくりたい方</li>
+              <li>自宅やオフィスで、落ち着いて受けたい方</li>
+              <li>その場しのぎではなく、日々の土台を見直したい方</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <p class="eyebrow" style="margin-bottom:10px;">Not For Everyone</p>
+            <h2 class="section-title" style="font-size:30px; margin-bottom:14px;">こうした方には向きません</h2>
+            <ul class="condition-list">
+              <li>平日朝の時間確保が難しい方</li>
+              <li>安価な単発施術だけを探している方</li>
+              <li>ご自身の状態を整える意思があまりない方</li>
+              <li>神戸市中央区外での出張対応を希望される方<br>※中央区外は提携gymでの対応を個別にご相談いただけます</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap profile">
+        <div class="profile-image">
+          <img src="images/profile.jpg" alt="GOZIKARA KOBE 担当者のプロフィール写真" />
+        </div>
+        <div class="profile-box">
+          <p class="profile-role">Trust & Profile</p>
+          <h2 class="profile-heading">安心して任せられる体制で、静かに整える時間をつくります。</h2>
+          <p class="profile-text">
+            担当は、医療系国家資格を持つ施術者です。
+            状態を見ながら、鍼灸・整体/姿勢調整・体幹トレーニングを組み合わせ、
+            ご自宅・オフィス・提携gymなど、受けやすい場所で対応します。
+          </p>
+          <ul class="credential-list">
+            <li>医療系国家資格保有者</li>
+            <li>鍼灸師</li>
+            <li>柔道整復師</li>
+            <li>アスレティックトレーナー</li>
+            <li>アシュタンガヨガ神戸 専属トレーナー</li>
+            <li>一般社団法人ヨガアーサナ連盟 公認トレーナー</li>
+            <li>株式会社 physical improve 代表</li>
+            <li>GOZIKARA KOBE 代表</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap grid-2">
+        <div>
+          <p class="eyebrow">Price & Conditions</p>
+          <h2 class="section-title">料金・提供条件</h2>
+          <p class="section-lead">
+            初回は、サービスの考え方と内容を無理なく体感していただくための体験枠です。
+            まずは一度、ご自身に合うかどうかを落ち着いてご判断ください。
+          </p>
+          <div style="height:18px;"></div>
+          <ul class="condition-list">
+            <li>対象：神戸市中央区の経営者・役員向け</li>
+            <li>提供時間：平日朝 5:00〜 / 7:15〜</li>
+            <li>施術時間：90分</li>
+            <li>完全出張</li>
+            <li>ご自宅・オフィス・提携gymで対応可</li>
+            <li>1日2枠のみ</li>
+            <li>交通費・出張費込み</li>
+          </ul>
+        </div>
+        <div class="price-box">
+          <p class="price-label">First Trial</p>
+          <p class="price">9,900円<span style="font-size:18px;">（税込）</span></p>
+          <p class="price-sub">
+            まずは初回体験をご利用ください。<br>
+            継続をご希望の方には会員制プランをご案内しています。詳細は初回体験後にご説明します。無理な継続提案はありません。
+          </p>
+          <div style="height:20px;"></div>
+          <a class="btn btn-primary" href="https://lin.ee/zzgg3hn" target="_blank" rel="noopener">初回体験を申し込む</a>
+          <p class="cta-note">LINE追加後、体験希望フォームへ進めます</p>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap">
+        <p class="eyebrow">FAQ</p>
+        <h2 class="section-title">よくあるご質問</h2>
+        <div class="faq">
+          <div class="faq-item">
+            <p class="faq-q">1. 初回体験では何をしますか？</p>
+            <p class="faq-a">
+              まず状態やご希望をうかがい、その上で鍼灸・整体/姿勢調整・体幹トレーニングを必要に応じて組み合わせます。
+              毎回同じ内容ではなく、その日の状態に合わせて90分を組み立てます。
+            </p>
+          </div>
+          <div class="faq-item">
+            <p class="faq-q">2. どんな人が対象ですか？</p>
+            <p class="faq-a">
+              神戸市中央区の経営者・役員の方を対象にしています。
+              平日朝の時間を確保でき、ご自宅やオフィスで落ち着いて受けたい方に向いています。
+            </p>
+          </div>
+          <div class="faq-item">
+            <p class="faq-q">3. どんな人には向いていませんか？</p>
+            <p class="faq-a">
+              平日朝の時間確保が難しい方、その場しのぎの安価な施術だけを求める方、
+              ご自身の状態を整える意思が薄い方には、あまり合わない可能性があります。
+            </p>
+          </div>
+          <div class="faq-item">
+            <p class="faq-q">4. 継続しないといけませんか？</p>
+            <p class="faq-a">
+              いいえ。初回体験後に継続を無理におすすめすることはありません。
+              まずは一度受けていただき、ご自身に合うかどうかでご判断ください。
+            </p>
+          </div>
+          <div class="faq-item">
+            <p class="faq-q">5. 初回体験後の料金はどうなりますか？</p>
+            <p class="faq-a">
+              継続をご希望の方には会員制プランをご案内しています。
+              詳細は初回体験後にご説明しますが、無理な継続提案はありません。
+            </p>
+          </div>
+          <div class="faq-item">
+            <p class="faq-q">6. 自宅でもオフィスでも受けられますか？</p>
+            <p class="faq-a">
+              はい。ご自宅・オフィスの両方に対応しています。必要に応じて提携gymでの対応も可能です。
+              神戸市中央区内は出張費込み、中央区外は提携gym活用を含めて個別にご相談ください。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="final-cta">
+      <div class="final-cta-media">
+        <img src="https://www.genspark.ai/api/files/s/cY8LuR8F" alt="神戸の風景" />
+      </div>
+      <div class="wrap final-cta-inner">
+        <div class="final-cta-box">
+          <p class="eyebrow">Final CTA</p>
+          <h2 class="final-copy">朝の90分を、<br>仕事の土台にする。</h2>
+          <p class="final-text">
+            GOZIKARAは、神戸市中央区の経営者・役員のための、平日朝限定・完全出張のコンディショニングです。
+            まずは初回体験で、ご自身に合うかどうかをお確かめください。
+          </p>
+          <a class="btn btn-primary" href="https://lin.ee/zzgg3hn" target="_blank" rel="noopener">初回体験を希望する</a>
+          <p class="cta-note">LINE追加後、体験希望フォームへ進めます</p>
+          <p class="safe-note">無理な継続提案はありません</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">
+      <p style="margin:0 0 8px;">GOZIKARA KOBE</p>
+      <p style="margin:0;">
+        本サービスは、体調や状態に合わせて内容を調整するコンディショニングです。医療効果の断定や結果の保証を行うものではありません。
+      </p>
+    </div>
+  </footer>
+  <div class="sticky-cta">
+    <a class="btn btn-primary" href="https://lin.ee/zzgg3hn" target="_blank" rel="noopener">初回体験を希望する</a>
+    <p class="sticky-note">LINE追加後、体験希望フォームへ進めます</p>
+  </div>
+</body>
+</html>
