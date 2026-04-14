@@ -353,6 +353,33 @@
       color: var(--muted);
       font-size: 14px;
     }
+    .pain-title {
+      font-family:
+        "Yu Mincho",
+        "Hiragino Mincho ProN",
+        "Noto Serif JP",
+        serif;
+      font-size: clamp(24px, 4vw, 38px);
+      font-weight: 500;
+      line-height: 1.45;
+      letter-spacing: 0.04em;
+      margin-bottom: 28px;
+    }
+    .pain-body {
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 2;
+      margin: 0 0 20px;
+    }
+    .pain-closing {
+      margin: 32px 0 0;
+      color: var(--gold);
+      font-size: clamp(16px, 2.5vw, 20px);
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      padding-top: 24px;
+      border-top: 1px solid #3a3020;
+    }
     .final-cta {
       position: relative;
       overflow: hidden;
@@ -490,7 +517,7 @@
             <span class="chip">90分</span>
             <span class="chip">1日2枠のみ</span>
             <span class="chip">完全出張</span>
-            <span class="chip">初回 9,900円（税込）</span>
+            <span class="chip">初回 9,900円（税・出張費込）</span>
           </div>
           <div class="cta-box">
             <a class="btn btn-primary" href="https://lin.ee/zzgg3hn" target="_blank" rel="noopener">初回体験を希望する</a>
@@ -502,6 +529,25 @@
     </div>
   </header>
   <main>
+    <section class="section pain-section">
+      <div class="wrap">
+        <p class="eyebrow">For Executives</p>
+        <h2 class="section-title pain-title">経営者がセルフケアを<br>後回しにする、理由がある。</h2>
+        <p class="pain-body">
+          日中は判断と会話で消耗し、夜は会食か積み残しの処理。<br>
+          週末は、せめて家族との時間を守りたい。
+        </p>
+        <p class="pain-body">
+          整体や運動が必要だとわかっていても、<br>
+          それを入れる時間が、どこにも見当たらない。
+        </p>
+        <p class="pain-body">
+          結果として、体は少しずつ蓄積し、<br>
+          集中のムラや疲れの抜けにくさが、仕事にも滲み出てくる。
+        </p>
+        <p class="pain-closing">それは意志の問題ではなく、構造の問題です。</p>
+      </div>
+    </section>
     <section class="section">
       <div class="wrap split">
         <div>
@@ -609,7 +655,7 @@
               <li>平日朝の時間確保が難しい方</li>
               <li>安価な単発施術だけを探している方</li>
               <li>ご自身の状態を整える意思があまりない方</li>
-              <li>神戸市中央区外での出張対応を希望される方<br>※中央区外は提携gymでの対応を個別にご相談いただけます</li>
+              <li>神戸市中央区外での出張対応を希望される方<br><span style="font-size:13px; color:var(--subtle);">※対応範囲が広がり次第ご案内します。</span></li>
             </ul>
           </div>
         </div>
@@ -621,22 +667,23 @@
           <img src="profile.png" alt="GOZIKARA KOBE 担当者のプロフィール写真" />
         </div>
         <div class="profile-box">
-          <p class="profile-role">Trust & Profile</p>
-          <h2 class="profile-heading">安心して任せられる体制で、静かに整える時間をつくります。</h2>
+          <p class="profile-role">THERAPIST PROFILE</p>
+          <h2 class="profile-heading">経営者の朝を、整えます。</h2>
           <p class="profile-text">
-            担当は、医療系国家資格を持つ施術者です。
-            状態を見ながら、鍼灸・整体/姿勢調整・体幹トレーニングを組み合わせ、
-            ご自宅・オフィス・提携gymなど、受けやすい場所で対応します。
+            担当は、鍼灸師・柔道整復師の国家資格保有者です。その日の身体の状態を見極め、鍼・整体・トレーニングを組み合わせます。
+          </p>
+          <p class="profile-text">
+            経営者・役員の方に必要なのは、仕事終わりの回復だけではなく、仕事前に整った状態で1日を始めることだと考えています。そのためGOZIKARAでは、一律の施術ではなく、朝の90分で無理なく整えられる構成を大切にしています。
+          </p>
+          <p class="profile-text">
+            また、初回体験後も無理な継続提案は行いません。必要な方にのみ、継続プランをご案内しています。
           </p>
           <ul class="credential-list">
-            <li>医療系国家資格保有者</li>
-            <li>鍼灸師</li>
-            <li>柔道整復師</li>
-            <li>アスレティックトレーナー</li>
-            <li>アシュタンガヨガ神戸 専属トレーナー</li>
-            <li>一般社団法人ヨガアーサナ連盟 公認トレーナー</li>
             <li>株式会社 physical improve 代表</li>
-            <li>GOZIKARA KOBE 代表</li>
+            <li>GOZIKARA KOBE 主宰</li>
+            <li style="font-size:13px;">アスレティックトレーナー</li>
+            <li style="font-size:13px;">アシュタンガヨガ神戸 専属トレーナー</li>
+            <li style="font-size:13px;">一般社団法人ヨガアーサナ連盟 公認トレーナー</li>
           </ul>
         </div>
       </div>
@@ -653,17 +700,15 @@
           <div style="height:18px;"></div>
           <ul class="condition-list">
             <li>対象：神戸市中央区の経営者・役員向け</li>
-            <li>提供時間：平日朝 5:00〜 / 7:15〜</li>
-            <li>施術時間：90分</li>
-            <li>完全出張</li>
-            <li>ご自宅・オフィス・提携gymで対応可</li>
-            <li>1日2枠のみ</li>
-            <li>交通費・出張費込み</li>
+            <li>提供時間：平日朝 5:00〜 / 7:15〜　1日2枠のみ</li>
+            <li>施術時間：約90分</li>
+            <li>ご自宅、オフィスへの完全出張</li>
+            <li>会員制（定員に達しだい募集停止）</li>
           </ul>
         </div>
         <div class="price-box">
           <p class="price-label">First Trial</p>
-          <p class="price">9,900円<span style="font-size:18px;">（税込）</span></p>
+          <p class="price">9,900円<span style="font-size:18px;">（税・出張費込）</span></p>
           <p class="price-sub">
             まずは初回体験をご利用ください。<br>
             継続をご希望の方には会員制プランをご案内しています。詳細は初回体験後にご説明します。無理な継続提案はありません。
@@ -717,8 +762,8 @@
           <div class="faq-item">
             <p class="faq-q">6. 自宅でもオフィスでも受けられますか？</p>
             <p class="faq-a">
-              はい。ご自宅・オフィスの両方に対応しています。必要に応じて提携gymでの対応も可能です。
-              神戸市中央区内は出張費込み、中央区外は提携gym活用を含めて個別にご相談ください。
+              はい。ご自宅・オフィスの両方に対応しています。必要に応じて提携GYMでの対応も可能です。
+              詳しくは公式LINEよりお気軽にお問い合わせください。
             </p>
           </div>
         </div>
@@ -730,7 +775,7 @@
       </div>
       <div class="wrap final-cta-inner">
         <div class="final-cta-box">
-          <p class="eyebrow">Final CTA</p>
+          <p class="eyebrow">First Step</p>
           <h2 class="final-copy">朝の90分を、<br>仕事の土台にする。</h2>
           <p class="final-text">
             GOZIKARAは、神戸市中央区の経営者・役員のための、平日朝限定・完全出張のコンディショニングです。
