@@ -229,16 +229,24 @@
     }
     .profile {
       display: grid;
-      gap: 20px;
+      gap: 24px;
       align-items: start;
+      justify-items: center;
     }
     .profile-image {
-      border: 1px solid var(--line);
+      border: 2px solid var(--gold-deep);
+      border-radius: 50%;
       overflow: hidden;
       background: #111;
+      width: 140px;
+      height: 140px;
+      flex-shrink: 0;
+      margin: 0 auto;
     }
     .profile-image img {
-      aspect-ratio: 4 / 5;
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 1 / 1;
       object-fit: cover;
       object-position: center top;
     }
@@ -473,7 +481,12 @@
         grid-template-columns: 1.1fr 0.9fr;
       }
       .profile {
-        grid-template-columns: 360px 1fr;
+        grid-template-columns: auto 1fr;
+        justify-items: start;
+      }
+      .profile-image {
+        width: 200px;
+        height: 200px;
       }
       .sticky-cta {
         display: none;
@@ -520,7 +533,7 @@
             <span class="chip">初回 9,900円（税・出張費込）</span>
           </div>
           <div class="cta-box">
-            <a class="btn btn-primary" href="https://lin.ee/zzgg3hn" target="_blank" rel="noopener">初回体験を希望する</a>
+            <a class="btn btn-primary" href="https://line.me/R/ti/p/%40125jdpmw" target="_blank" rel="noopener">初回体験を希望する</a>
             <p class="cta-note">LINE追加後、体験希望フォームへ進めます</p>
             <p class="safe-note">無理な継続提案はありません</p>
           </div>
@@ -669,8 +682,9 @@
         <div class="profile-box">
           <p class="profile-role">THERAPIST PROFILE</p>
           <h2 class="profile-heading">経営者の朝を、整えます。</h2>
+          <p style="margin: -8px 0 16px; font-size: 18px; font-weight: 700; color: var(--white); letter-spacing: 0.06em;">森本 剛一郎 <span style="font-size: 12px; color: var(--subtle); letter-spacing: 0.12em; margin-left: 8px;">MORIMOTO KOICHIRO</span></p>
           <p class="profile-text">
-            担当は、鍼灸師・柔道整復師の国家資格保有者です。その日の身体の状態を見極め、鍼・整体・トレーニングを組み合わせます。
+            お客様のその日の身体の状態を見極め、鍼・整体・トレーニングを組み合わせます。
           </p>
           <p class="profile-text">
             経営者・役員の方に必要なのは、仕事終わりの回復だけではなく、仕事前に整った状態で1日を始めることだと考えています。そのためGOZIKARAでは、一律の施術ではなく、朝の90分で無理なく整えられる構成を大切にしています。
@@ -679,11 +693,10 @@
             また、初回体験後も無理な継続提案は行いません。必要な方にのみ、継続プランをご案内しています。
           </p>
           <ul class="credential-list">
-            <li>株式会社 physical improve 代表</li>
-            <li>GOZIKARA KOBE 主宰</li>
-            <li style="font-size:13px;">アスレティックトレーナー</li>
-            <li style="font-size:13px;">アシュタンガヨガ神戸 専属トレーナー</li>
-            <li style="font-size:13px;">一般社団法人ヨガアーサナ連盟 公認トレーナー</li>
+            <li style="font-size:12px; line-height:1.8;">鍼灸師｜柔道整復師（国家資格）</li>
+            <li style="font-size:12px; line-height:1.8;">株式会社 physical improve｜GOZIKARA KOBE 代表</li>
+            <li style="font-size:12px; line-height:1.8;">アスレティックトレーナー｜アシュタンガヨガ神戸 専属トレーナー</li>
+            <li style="font-size:12px; line-height:1.8;">一般社団法人ヨガアーサナ連盟 公認トレーナー</li>
           </ul>
         </div>
       </div>
@@ -691,8 +704,8 @@
     <section class="section">
       <div class="wrap grid-2">
         <div>
-          <p class="eyebrow">Price & Conditions</p>
-          <h2 class="section-title">料金・提供条件</h2>
+          <p class="eyebrow">Price</p>
+          <h2 class="section-title">料金</h2>
           <p class="section-lead">
             初回は、サービスの考え方と内容を無理なく体感していただくための体験枠です。
             まずは一度、ご自身に合うかどうかを落ち着いてご判断ください。
@@ -714,7 +727,7 @@
             継続をご希望の方には会員制プランをご案内しています。詳細は初回体験後にご説明します。無理な継続提案はありません。
           </p>
           <div style="height:20px;"></div>
-          <a class="btn btn-primary" href="https://lin.ee/zzgg3hn" target="_blank" rel="noopener">初回体験を申し込む</a>
+          <a class="btn btn-primary" href="https://line.me/R/ti/p/%40125jdpmw" target="_blank" rel="noopener">初回体験を申し込む</a>
           <p class="cta-note">LINE追加後、体験希望フォームへ進めます</p>
         </div>
       </div>
@@ -781,7 +794,7 @@
             GOZIKARAは、神戸市中央区の経営者・役員のための、平日朝限定・完全出張のコンディショニングです。
             まずは初回体験で、ご自身に合うかどうかをお確かめください。
           </p>
-          <a class="btn btn-primary" href="https://lin.ee/zzgg3hn" target="_blank" rel="noopener">初回体験を希望する</a>
+          <a class="btn btn-primary" href="https://line.me/R/ti/p/%40125jdpmw" target="_blank" rel="noopener">初回体験を希望する</a>
           <p class="cta-note">LINE追加後、体験希望フォームへ進めます</p>
           <p class="safe-note">無理な継続提案はありません</p>
         </div>
@@ -797,7 +810,7 @@
     </div>
   </footer>
   <div class="sticky-cta">
-    <a class="btn btn-primary" href="https://lin.ee/zzgg3hn" target="_blank" rel="noopener">初回体験を希望する</a>
+    <a class="btn btn-primary" href="https://line.me/R/ti/p/%40125jdpmw" target="_blank" rel="noopener">初回体験を希望する</a>
     <p class="sticky-note">LINE追加後、体験希望フォームへ進めます</p>
   </div>
 </body>
