@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GOZIKARA KOBE｜神戸市中央区の経営者・役員向け 早朝出張コンディショニング</title>
-  <meta name="description" content="神戸市中央区の経営者・役員向け。朝5:00 / 7:15、完全出張の90分コンディショニング。鍼灸・整体/姿勢調整・体幹トレーニングを状態に合わせて組み合わせ。初回体験9,900円（税込）。" />
+  <meta name="description" content="神戸市中央区の経営者・役員向け。朝5:00 / 7:15、完全出張の90分コンディショニング。鍼灸・整体/姿勢調整・体幹トレーニングを状態に合わせて組み合わせ。初回体験9,900円（税・出張費込）。" />
   <style>
     :root {
       --bg: #0a0a0a;
@@ -19,38 +19,20 @@
       --max: 1120px;
       --radius: 18px;
     }
-    * {
-      box-sizing: border-box;
-    }
-    html {
-      scroll-behavior: smooth;
-    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
       background: var(--bg);
       color: var(--text);
-      font-family:
-        "Hiragino Sans",
-        "Noto Sans JP",
-        "Yu Gothic",
-        system-ui,
-        -apple-system,
-        BlinkMacSystemFont,
-        sans-serif;
+      font-family: "Hiragino Sans", "Noto Sans JP", "Yu Gothic", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
       line-height: 1.9;
       letter-spacing: 0.02em;
       -webkit-font-smoothing: antialiased;
       text-rendering: optimizeLegibility;
     }
-    img {
-      width: 100%;
-      display: block;
-      height: auto;
-    }
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+    img { width: 100%; display: block; height: auto; }
+    a { color: inherit; text-decoration: none; }
     .wrap {
       width: min(calc(100% - 32px), var(--max));
       margin: 0 auto;
@@ -68,11 +50,7 @@
     }
     .section-title {
       margin: 0 0 18px;
-      font-family:
-        "Yu Mincho",
-        "Hiragino Mincho ProN",
-        "Noto Serif JP",
-        serif;
+      font-family: "Yu Mincho", "Hiragino Mincho ProN", "Noto Serif JP", serif;
       font-size: clamp(28px, 4vw, 42px);
       font-weight: 500;
       line-height: 1.35;
@@ -83,6 +61,8 @@
       color: var(--muted);
       font-size: 15px;
     }
+
+    /* HERO */
     .hero {
       position: relative;
       padding-bottom: 36px;
@@ -100,8 +80,7 @@
       content: "";
       position: absolute;
       inset: 0;
-      background:
-        linear-gradient(to bottom, rgba(0,0,0,0.20) 0%, rgba(0,0,0,0.55) 60%, rgba(0,0,0,0.92) 100%);
+      background: linear-gradient(to bottom, rgba(0,0,0,0.20) 0%, rgba(0,0,0,0.55) 60%, rgba(0,0,0,0.92) 100%);
     }
     .hero-media img {
       height: 100%;
@@ -121,11 +100,7 @@
     }
     .hero-title {
       margin: 0 0 10px;
-      font-family:
-        "Yu Mincho",
-        "Hiragino Mincho ProN",
-        "Noto Serif JP",
-        serif;
+      font-family: "Yu Mincho", "Hiragino Mincho ProN", "Noto Serif JP", serif;
       font-size: clamp(26px, 6.2vw, 60px);
       font-weight: 500;
       line-height: 1.28;
@@ -151,9 +126,7 @@
       line-height: 1.4;
       white-space: nowrap;
     }
-    .cta-box {
-      margin-top: 26px;
-    }
+    .cta-box { margin-top: 26px; }
     .btn {
       display: inline-flex;
       align-items: center;
@@ -167,14 +140,8 @@
       transition: opacity .2s ease, transform .2s ease;
       text-align: center;
     }
-    .btn:hover {
-      opacity: 0.92;
-      transform: translateY(-1px);
-    }
-    .btn-primary {
-      background: var(--gold);
-      color: #111111;
-    }
+    .btn:hover { opacity: 0.92; transform: translateY(-1px); }
+    .btn-primary { background: var(--gold); color: #111111; }
     .btn-secondary {
       background: transparent;
       color: var(--text);
@@ -192,11 +159,34 @@
       font-size: 12px;
       text-align: center;
     }
-    .grid-2,
-    .grid-3 {
-      display: grid;
-      gap: 18px;
+
+    /* PAIN SECTION */
+    .pain-title {
+      font-family: "Yu Mincho", "Hiragino Mincho ProN", "Noto Serif JP", serif;
+      font-size: clamp(24px, 4vw, 38px);
+      font-weight: 500;
+      line-height: 1.45;
+      letter-spacing: 0.04em;
+      margin-bottom: 28px;
     }
+    .pain-body {
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 2;
+      margin: 0 0 20px;
+    }
+    .pain-closing {
+      margin: 32px 0 0;
+      color: var(--gold);
+      font-size: clamp(16px, 2.5vw, 20px);
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      padding-top: 24px;
+      border-top: 1px solid #3a3020;
+    }
+
+    /* GRID & CARDS */
+    .grid-2, .grid-3 { display: grid; gap: 18px; }
     .card {
       border: 1px solid var(--line);
       background: var(--bg-soft);
@@ -207,9 +197,7 @@
       object-fit: cover;
       object-position: center;
     }
-    .card-body {
-      padding: 20px 18px 18px;
-    }
+    .card-body { padding: 20px 18px 18px; }
     .card-title {
       margin: 0 0 8px;
       font-size: 18px;
@@ -217,22 +205,13 @@
       font-weight: 700;
       color: var(--white);
     }
-    .card-text {
-      margin: 0;
-      color: var(--muted);
-      font-size: 14px;
-    }
-    .split {
-      display: grid;
-      gap: 24px;
-      align-items: start;
-    }
-    .profile {
-      display: grid;
-      gap: 24px;
-      align-items: start;
-      justify-items: center;
-    }
+    .card-text { margin: 0; color: var(--muted); font-size: 14px; }
+
+    /* SPLIT */
+    .split { display: grid; gap: 24px; align-items: start; }
+
+    /* PROFILE */
+    .profile { display: grid; gap: 24px; align-items: start; justify-items: center; }
     .profile-image {
       border: 2px solid var(--gold-deep);
       border-radius: 50%;
@@ -269,176 +248,70 @@
       line-height: 1.5;
       font-weight: 700;
     }
-    .profile-text {
-      margin: 0 0 16px;
-      color: var(--muted);
-      font-size: 14px;
+    .profile-text { margin: 0 0 16px; color: var(--muted); font-size: 14px; }
+    .credential-list, .fit-list, .condition-list {
+      margin: 0; padding: 0; list-style: none; display: grid; gap: 10px;
     }
-    .credential-list,
-    .fit-list,
-    .condition-list {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      display: grid;
-      gap: 10px;
-    }
-    .credential-list li,
-    .fit-list li,
-    .condition-list li {
+    .credential-list li, .fit-list li, .condition-list li {
       padding-top: 10px;
       border-top: 1px solid var(--line);
       color: var(--muted);
       font-size: 14px;
     }
-    .credential-list li:first-child,
-    .fit-list li:first-child,
-    .condition-list li:first-child {
-      padding-top: 0;
-      border-top: 0;
+    .credential-list li:first-child, .fit-list li:first-child, .condition-list li:first-child {
+      padding-top: 0; border-top: 0;
     }
-    .highlight-box {
-      border: 1px solid #473c26;
-      background: #15120d;
-      padding: 18px;
-    }
-    .highlight-title {
-      margin: 0 0 8px;
-      color: #efe1bd;
-      font-size: 16px;
-      font-weight: 700;
-    }
-    .highlight-text {
-      margin: 0;
-      color: #ddd2bc;
-      font-size: 14px;
-    }
-    .price-box {
-      border: 1px solid #4b3f27;
-      background: #15120d;
-      padding: 22px 18px;
-    }
-    .price-label {
-      margin: 0;
-      color: #efe1bd;
-      font-size: 12px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-    }
+
+    /* HIGHLIGHT */
+    .highlight-box { border: 1px solid #473c26; background: #15120d; padding: 18px; }
+    .highlight-title { margin: 0 0 8px; color: #efe1bd; font-size: 16px; font-weight: 700; }
+    .highlight-text { margin: 0; color: #ddd2bc; font-size: 14px; }
+
+    /* PRICE */
+    .price-box { border: 1px solid #4b3f27; background: #15120d; padding: 22px 18px; }
+    .price-label { margin: 0; color: #efe1bd; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; }
     .price {
       margin: 8px 0 0;
-      font-family:
-        "Yu Mincho",
-        "Hiragino Mincho ProN",
-        "Noto Serif JP",
-        serif;
+      font-family: "Yu Mincho", "Hiragino Mincho ProN", "Noto Serif JP", serif;
       font-size: clamp(34px, 8vw, 52px);
       line-height: 1.2;
       font-weight: 500;
       color: var(--white);
     }
-    .price-sub {
-      margin: 8px 0 0;
-      color: var(--muted);
-      font-size: 14px;
-    }
-    .faq {
-      display: grid;
-      gap: 14px;
-    }
-    .faq-item {
-      border: 1px solid var(--line);
-      background: var(--bg-soft);
-      padding: 18px 16px;
-    }
-    .faq-q {
-      margin: 0 0 10px;
-      color: var(--white);
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 1.6;
-    }
-    .faq-a {
-      margin: 0;
-      color: var(--muted);
-      font-size: 14px;
-    }
-    .pain-title {
-      font-family:
-        "Yu Mincho",
-        "Hiragino Mincho ProN",
-        "Noto Serif JP",
-        serif;
-      font-size: clamp(24px, 4vw, 38px);
-      font-weight: 500;
-      line-height: 1.45;
-      letter-spacing: 0.04em;
-      margin-bottom: 28px;
-    }
-    .pain-body {
-      color: var(--muted);
-      font-size: 16px;
-      line-height: 2;
-      margin: 0 0 20px;
-    }
-    .pain-closing {
-      margin: 32px 0 0;
-      color: var(--gold);
-      font-size: clamp(16px, 2.5vw, 20px);
-      font-weight: 500;
-      letter-spacing: 0.06em;
-      padding-top: 24px;
-      border-top: 1px solid #3a3020;
-    }
-    .final-cta {
-      position: relative;
-      overflow: hidden;
-      border-top: 1px solid var(--line);
-    }
-    .final-cta-media {
-      position: absolute;
-      inset: 0;
-      z-index: 0;
-    }
+    .price-sub { margin: 8px 0 0; color: var(--muted); font-size: 14px; }
+
+    /* FAQ */
+    .faq { display: grid; gap: 14px; }
+    .faq-item { border: 1px solid var(--line); background: var(--bg-soft); padding: 18px 16px; }
+    .faq-q { margin: 0 0 10px; color: var(--white); font-size: 16px; font-weight: 700; line-height: 1.6; }
+    .faq-a { margin: 0; color: var(--muted); font-size: 14px; }
+
+    /* FINAL CTA */
+    .final-cta { position: relative; overflow: hidden; border-top: 1px solid var(--line); }
+    .final-cta-media { position: absolute; inset: 0; z-index: 0; }
     .final-cta-media::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.74);
+      content: ""; position: absolute; inset: 0; background: rgba(0,0,0,0.74);
     }
     .final-cta-media img {
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-      filter: brightness(0.7) saturate(0.95);
+      height: 100%; object-fit: cover; object-position: center; filter: brightness(0.7) saturate(0.95);
     }
-    .final-cta-inner {
-      position: relative;
-      z-index: 1;
-      padding: 84px 0;
-    }
+    .final-cta-inner { position: relative; z-index: 1; padding: 84px 0; }
     .final-cta-box {
-      border: 1px solid rgba(184, 154, 94, 0.34);
-      background: rgba(10, 10, 10, 0.88);
+      border: 1px solid rgba(184,154,94,0.34);
+      background: rgba(10,10,10,0.88);
       padding: 30px 22px;
     }
     .final-copy {
       margin: 0 0 10px;
-      font-family:
-        "Yu Mincho",
-        "Hiragino Mincho ProN",
-        "Noto Serif JP",
-        serif;
+      font-family: "Yu Mincho", "Hiragino Mincho ProN", "Noto Serif JP", serif;
       font-size: clamp(28px, 5vw, 44px);
       line-height: 1.45;
       letter-spacing: 0.05em;
       font-weight: 500;
     }
-    .final-text {
-      margin: 0 0 22px;
-      color: var(--muted);
-      font-size: 15px;
-    }
+    .final-text { margin: 0 0 22px; color: var(--muted); font-size: 15px; }
+
+    /* FOOTER */
     footer {
       padding: 22px 0 100px;
       color: var(--subtle);
@@ -446,72 +319,40 @@
       text-align: center;
       border-top: 1px solid var(--line);
     }
+
+    /* STICKY CTA */
     .sticky-cta {
-      position: fixed;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 40;
+      position: fixed; left: 0; right: 0; bottom: 0; z-index: 40;
       padding: 10px 12px 12px;
-      background: rgba(10, 10, 10, 0.96);
+      background: rgba(10,10,10,0.96);
       border-top: 1px solid #2f2a22;
     }
-    .sticky-cta .btn {
-      min-height: 54px;
-      font-size: 14px;
-    }
-    .sticky-note {
-      margin: 8px 0 0;
-      text-align: center;
-      color: var(--subtle);
-      font-size: 11px;
-    }
+    .sticky-cta .btn { min-height: 54px; font-size: 14px; }
+    .sticky-note { margin: 8px 0 0; text-align: center; color: var(--subtle); font-size: 11px; }
+
+    /* DESKTOP */
     @media (min-width: 768px) {
-      .wrap {
-        width: min(calc(100% - 64px), var(--max));
-      }
-      .hero-card {
-        padding: 40px 40px 34px;
-      }
-      .grid-2 {
-        grid-template-columns: 1fr 1fr;
-      }
-      .grid-3 {
-        grid-template-columns: repeat(3, 1fr);
-      }
-      .split {
-        grid-template-columns: 1.1fr 0.9fr;
-      }
-      .profile {
-        grid-template-columns: auto 1fr;
-        justify-items: start;
-      }
-      .profile-image {
-        width: 200px;
-        height: 200px;
-      }
-      .sticky-cta {
-        display: none;
-      }
-      footer {
-        padding-bottom: 40px;
-      }
+      .wrap { width: min(calc(100% - 64px), var(--max)); }
+      .hero-card { padding: 40px 40px 34px; }
+      .grid-2 { grid-template-columns: 1fr 1fr; }
+      .grid-3 { grid-template-columns: repeat(3, 1fr); }
+      .split { grid-template-columns: 1.1fr 0.9fr; }
+      .profile { grid-template-columns: auto 1fr; justify-items: start; }
+      .profile-image { width: 200px; height: 200px; }
+      .sticky-cta { display: none; }
+      footer { padding-bottom: 40px; }
     }
+
+    /* MOBILE */
     @media (max-width: 767px) {
-      body {
-        padding-bottom: 94px;
-      }
-      .hero-card-wrap {
-        margin-top: -90px;
-      }
-      .hero-media {
-        min-height: 360px;
-        height: 48vh;
-      }
+      body { padding-bottom: 94px; }
+      .hero-card-wrap { margin-top: -80px; }
     }
   </style>
 </head>
 <body>
+
+  <!-- HERO -->
   <header class="hero">
     <div class="hero-media">
       <img src="kobe-morning.jpg" alt="神戸の朝の風景" />
@@ -536,14 +377,17 @@
           </div>
           <div class="cta-box">
             <a class="btn btn-primary" href="https://line.me/R/ti/p/%40125jdpmw" target="_blank" rel="noopener">初回体験を希望する</a>
-            <p class="cta-note">LINE追加後、体験希望フォームへ進めます</p>
+            <p class="cta-note">LINE追加後、希望曜日・場所などを簡単にご回答ください。担当者より候補日をご連絡します。</p>
             <p class="safe-note">無理な継続提案はありません</p>
           </div>
         </div>
       </div>
     </div>
   </header>
+
   <main>
+
+    <!-- PAIN SECTION -->
     <section class="section pain-section">
       <div class="wrap">
         <p class="eyebrow">For Executives</p>
@@ -563,6 +407,8 @@
         <p class="pain-closing">それは意志の問題ではなく、構造の問題です。</p>
       </div>
     </section>
+
+    <!-- ABOUT -->
     <section class="section">
       <div class="wrap split">
         <div>
@@ -594,6 +440,8 @@
         </div>
       </div>
     </section>
+
+    <!-- WHY MORNING -->
     <section class="section">
       <div class="wrap">
         <p class="eyebrow">Why Morning</p>
@@ -609,44 +457,40 @@
         </p>
       </div>
     </section>
+
+    <!-- 90 MINUTES -->
     <section class="section">
       <div class="wrap">
         <p class="eyebrow">90 Minutes</p>
         <h2 class="section-title">90分で行う内容</h2>
-        <p class="section-lead">
-          毎回同じ内容を当てはめるのではなく、その日の状態に合わせて組み合わせます。
-        </p>
+        <p class="section-lead">毎回同じ内容を当てはめるのではなく、その日の状態に合わせて組み合わせます。</p>
         <div class="grid-3" style="margin-top:28px;">
           <article class="card">
             <img src="treatment-posture.jpg" alt="整体・姿勢調整の施術風景" />
             <div class="card-body">
               <h3 class="card-title">整体・姿勢調整</h3>
-              <p class="card-text">
-                体の緊張や使い方の偏りを見ながら、姿勢や動きの土台を整えていきます。
-              </p>
+              <p class="card-text">体の緊張や使い方の偏りを見ながら、姿勢や動きの土台を整えていきます。</p>
             </div>
           </article>
           <article class="card">
             <img src="treatment-acupuncture.jpg" alt="鍼灸の施術風景" />
             <div class="card-body">
               <h3 class="card-title">鍼灸</h3>
-              <p class="card-text">
-                状態に応じて、負担の少ない方法で取り入れます。刺激の強さも無理なく調整します。
-              </p>
+              <p class="card-text">状態に応じて、負担の少ない方法で取り入れます。刺激の強さも無理なく調整します。</p>
             </div>
           </article>
           <article class="card">
             <img src="treatment-core.jpg" alt="体幹トレーニングの風景" />
             <div class="card-body">
               <h3 class="card-title">体幹トレーニング</h3>
-              <p class="card-text">
-                ただほぐすだけで終わらず、必要に応じて支えやすい体の使い方まで整えます。
-              </p>
+              <p class="card-text">ただほぐすだけで終わらず、必要に応じて支えやすい体の使い方まで整えます。</p>
             </div>
           </article>
         </div>
       </div>
     </section>
+
+    <!-- FOR YOU / NOT FOR YOU -->
     <section class="section">
       <div class="wrap grid-2">
         <div class="card">
@@ -676,10 +520,12 @@
         </div>
       </div>
     </section>
+
+    <!-- PROFILE -->
     <section class="section">
       <div class="wrap profile">
         <div class="profile-image">
-          <img src="profile.png" alt="GOZIKARA KOBE 担当者のプロフィール写真" />
+          <img src="profile.png" alt="GOZIKARA KOBE 森本剛一郎 プロフィール写真" />
         </div>
         <div class="profile-box">
           <p class="profile-role">THERAPIST PROFILE</p>
@@ -703,6 +549,8 @@
         </div>
       </div>
     </section>
+
+    <!-- PRICE -->
     <section class="section">
       <div class="wrap grid-2">
         <div>
@@ -730,10 +578,12 @@
           </p>
           <div style="height:20px;"></div>
           <a class="btn btn-primary" href="https://line.me/R/ti/p/%40125jdpmw" target="_blank" rel="noopener">初回体験を申し込む</a>
-          <p class="cta-note">LINE追加後、体験希望フォームへ進めます</p>
+          <p class="cta-note">LINE追加後、希望曜日・場所などを簡単にご回答ください。担当者より候補日をご連絡します。</p>
         </div>
       </div>
     </section>
+
+    <!-- FAQ -->
     <section class="section">
       <div class="wrap">
         <p class="eyebrow">FAQ</p>
@@ -741,49 +591,33 @@
         <div class="faq">
           <div class="faq-item">
             <p class="faq-q">1. 初回体験では何をしますか？</p>
-            <p class="faq-a">
-              まず状態やご希望をうかがい、その上で鍼灸・整体/姿勢調整・体幹トレーニングを必要に応じて組み合わせます。
-              毎回同じ内容ではなく、その日の状態に合わせて90分を組み立てます。
-            </p>
+            <p class="faq-a">まず状態やご希望をうかがい、その上で鍼灸・整体/姿勢調整・体幹トレーニングを必要に応じて組み合わせます。毎回同じ内容ではなく、その日の状態に合わせて90分を組み立てます。</p>
           </div>
           <div class="faq-item">
             <p class="faq-q">2. どんな人が対象ですか？</p>
-            <p class="faq-a">
-              神戸市中央区の経営者・役員の方を対象にしています。
-              平日朝の時間を確保でき、ご自宅やオフィスで落ち着いて受けたい方に向いています。
-            </p>
+            <p class="faq-a">神戸市中央区の経営者・役員の方を対象にしています。平日朝の時間を確保でき、ご自宅やオフィスで落ち着いて受けたい方に向いています。</p>
           </div>
           <div class="faq-item">
             <p class="faq-q">3. どんな人には向いていませんか？</p>
-            <p class="faq-a">
-              平日朝の時間確保が難しい方、その場しのぎの安価な施術だけを求める方、
-              ご自身の状態を整える意思が薄い方には、あまり合わない可能性があります。
-            </p>
+            <p class="faq-a">平日朝の時間確保が難しい方、その場しのぎの安価な施術だけを求める方、ご自身の状態を整える意思が薄い方には、あまり合わない可能性があります。</p>
           </div>
           <div class="faq-item">
             <p class="faq-q">4. 継続しないといけませんか？</p>
-            <p class="faq-a">
-              いいえ。初回体験後に継続を無理におすすめすることはありません。
-              まずは一度受けていただき、ご自身に合うかどうかでご判断ください。
-            </p>
+            <p class="faq-a">いいえ。初回体験後に継続を無理におすすめすることはありません。まずは一度受けていただき、ご自身に合うかどうかでご判断ください。</p>
           </div>
           <div class="faq-item">
             <p class="faq-q">5. 初回体験後の料金はどうなりますか？</p>
-            <p class="faq-a">
-              継続をご希望の方には会員制プランをご案内しています。
-              詳細は初回体験後にご説明しますが、無理な継続提案はありません。
-            </p>
+            <p class="faq-a">継続をご希望の方には会員制プランをご案内しています。詳細は初回体験後にご説明しますが、無理な継続提案はありません。</p>
           </div>
           <div class="faq-item">
             <p class="faq-q">6. 自宅でもオフィスでも受けられますか？</p>
-            <p class="faq-a">
-              はい。ご自宅・オフィスの両方に対応しています。必要に応じて提携GYMでの対応も可能です。
-              詳しくは公式LINEよりお気軽にお問い合わせください。
-            </p>
+            <p class="faq-a">はい。ご自宅・オフィスの両方に対応しています。必要に応じて提携GYMでの対応も可能です。詳しくは公式LINEよりお気軽にお問い合わせください。</p>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- FINAL CTA -->
     <section class="final-cta">
       <div class="final-cta-media">
         <img src="kobe-mosaic.jpg" alt="神戸の風景" />
@@ -797,23 +631,25 @@
             まずは初回体験で、ご自身に合うかどうかをお確かめください。
           </p>
           <a class="btn btn-primary" href="https://line.me/R/ti/p/%40125jdpmw" target="_blank" rel="noopener">初回体験を希望する</a>
-          <p class="cta-note">LINE追加後、体験希望フォームへ進めます</p>
+          <p class="cta-note">LINE追加後、希望曜日・場所などを簡単にご回答ください。担当者より候補日をご連絡します。</p>
           <p class="safe-note">無理な継続提案はありません</p>
         </div>
       </div>
     </section>
+
   </main>
+
   <footer>
     <div class="wrap">
       <p style="margin:0 0 8px;">GOZIKARA KOBE</p>
-      <p style="margin:0;">
-        本サービスは、体調や状態に合わせて内容を調整するコンディショニングです。医療効果の断定や結果の保証を行うものではありません。
-      </p>
+      <p style="margin:0;">本サービスは、体調や状態に合わせて内容を調整するコンディショニングです。医療効果の断定や結果の保証を行うものではありません。</p>
     </div>
   </footer>
+
   <div class="sticky-cta">
     <a class="btn btn-primary" href="https://line.me/R/ti/p/%40125jdpmw" target="_blank" rel="noopener">初回体験を希望する</a>
-    <p class="sticky-note">LINE追加後、体験希望フォームへ進めます</p>
+    <p class="sticky-note">LINE追加後、希望曜日・場所などを簡単にご回答ください。担当者より候補日をご連絡します。</p>
   </div>
+
 </body>
 </html>
