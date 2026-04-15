@@ -127,6 +127,29 @@
       white-space: nowrap;
     }
     .cta-box { margin-top: 26px; }
+    .monitor-badge {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #1a1408;
+      border: 1px solid #6b5425;
+      padding: 10px 14px;
+      margin-bottom: 14px;
+      font-size: 13px;
+      color: #efe1bd;
+      line-height: 1.6;
+    }
+    .monitor-badge::before {
+      content: "●";
+      color: var(--gold);
+      font-size: 8px;
+      flex-shrink: 0;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
     .btn {
       display: inline-flex;
       align-items: center;
@@ -376,6 +399,7 @@
             <span class="chip">初回 9,900円（税・出張費込）</span>
           </div>
           <div class="cta-box">
+            <div class="monitor-badge">現在、モニター価格での受付中。定員5名に達し次第、通常料金に移行します。</div>
             <a class="btn btn-primary" href="https://line.me/R/ti/p/%40125jdpmw" target="_blank" rel="noopener">初回体験を希望する</a>
             <p class="cta-note">LINE追加後、希望曜日・場所などを簡単にご回答ください。担当者より候補日をご連絡します。</p>
             <p class="safe-note">無理な継続提案はありません</p>
@@ -577,6 +601,7 @@
             継続をご希望の方には会員制プランをご案内しています。詳細は初回体験後にご説明します。無理な継続提案はありません。
           </p>
           <div style="height:20px;"></div>
+          <div class="monitor-badge">現在、モニター価格での受付中。定員5名に達し次第、通常料金に移行します。</div>
           <a class="btn btn-primary" href="https://line.me/R/ti/p/%40125jdpmw" target="_blank" rel="noopener">初回体験を申し込む</a>
           <p class="cta-note">LINE追加後、希望曜日・場所などを簡単にご回答ください。担当者より候補日をご連絡します。</p>
         </div>
@@ -630,6 +655,7 @@
             GOZIKARAは、神戸市中央区の経営者・役員のための、平日朝限定・完全出張のコンディショニングです。
             まずは初回体験で、ご自身に合うかどうかをお確かめください。
           </p>
+          <div class="monitor-badge">現在、モニター価格での受付中。定員5名に達し次第、通常料金に移行します。</div>
           <a class="btn btn-primary" href="https://line.me/R/ti/p/%40125jdpmw" target="_blank" rel="noopener">初回体験を希望する</a>
           <p class="cta-note">LINE追加後、希望曜日・場所などを簡単にご回答ください。担当者より候補日をご連絡します。</p>
           <p class="safe-note">無理な継続提案はありません</p>
