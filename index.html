@@ -351,6 +351,11 @@
       padding: 10px 12px 12px;
       background: rgba(10,10,10,0.96);
       border-top: 1px solid #2f2a22;
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+    }
+    .sticky-cta.is-visible {
+      transform: translateY(0);
     }
     .sticky-cta .btn { min-height: 54px; font-size: 14px; }
     .sticky-note { margin: 8px 0 0; text-align: center; color: var(--subtle); font-size: 11px; }
@@ -387,7 +392,6 @@
       .split { grid-template-columns: 1.1fr 0.9fr; }
       .profile { grid-template-columns: auto 1fr; justify-items: start; }
       .profile-image { width: 200px; height: 200px; }
-      .sticky-cta { display: none; }
       footer { padding-bottom: 40px; }
     }
 
@@ -411,7 +415,7 @@
           <p class="eyebrow">GOZIKARA KOBE</p>
           <h1 class="hero-title">経営者が倒れれば、<br>すべてが止まる。</h1>
           <p class="hero-subhead">神戸市中央区の経営者・役員向け｜平日朝5時〜完全出張｜90分¥9,900</p>
-          <div class="cta-box">
+          <div class="cta-box" id="hero-cta">
             <div class="monitor-badge">現在、モニター価格での受付中。定員5名に達し次第、通常料金に移行します。</div>
             <a class="btn btn-primary" href="https://line.me/R/ti/p/%40125jdpmw" target="_blank" rel="noopener">初回体験を希望する</a>
             <p class="cta-note">LINE追加後、希望曜日・場所などを簡単にご回答ください。担当者より候補日をご連絡します。</p>
@@ -686,5 +690,24 @@
     <p class="sticky-note" style="margin-top:4px;">電話でのお問い合わせ：<a href="tel:05054755853" style="color:var(--gold);">050-5475-5853</a></p>
   </div>
 
+  <script>
+    (function () {
+      var stickyCta = document.querySelector('.sticky-cta');
+      var heroCta = document.getElementById('hero-cta');
+      if (!stickyCta || !heroCta) return;
+
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            stickyCta.classList.remove('is-visible');
+          } else {
+            stickyCta.classList.add('is-visible');
+          }
+        });
+      }, { threshold: 0 });
+
+      observer.observe(heroCta);
+    })();
+  </script>
 </body>
 </html>
