@@ -107,32 +107,20 @@
       padding: 20px 18px 18px;
     }
     .hero-title {
-      margin: 0 0 10px;
+      margin: 0 0 14px;
       font-family: "Yu Mincho", "Hiragino Mincho ProN", "Noto Serif JP", serif;
-      font-size: clamp(26px, 6.2vw, 60px);
+      font-size: clamp(28px, 6.8vw, 64px);
       font-weight: 500;
       line-height: 1.28;
       letter-spacing: 0.05em;
     }
-    .hero-lead {
-      margin: 0;
-      color: var(--muted);
-      font-size: 15px;
-    }
-    .chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 22px;
-    }
-    .chip {
-      border: 1px solid #38342d;
-      color: #efe7d7;
-      background: #15120d;
-      padding: 8px 12px;
-      font-size: 12px;
-      line-height: 1.4;
-      white-space: nowrap;
+    .hero-subhead {
+      margin: 0 0 4px;
+      color: var(--gold);
+      font-size: clamp(12px, 3vw, 14px);
+      letter-spacing: 0.04em;
+      line-height: 1.8;
+      font-weight: 500;
     }
     .cta-box { margin-top: 26px; }
     .monitor-badge {
@@ -200,31 +188,6 @@
       color: #e8ddc5;
       font-size: 12px;
       text-align: center;
-    }
-
-    /* PAIN SECTION */
-    .pain-title {
-      font-family: "Yu Mincho", "Hiragino Mincho ProN", "Noto Serif JP", serif;
-      font-size: clamp(24px, 4vw, 38px);
-      font-weight: 500;
-      line-height: 1.45;
-      letter-spacing: 0.04em;
-      margin-bottom: 28px;
-    }
-    .pain-body {
-      color: var(--muted);
-      font-size: 16px;
-      line-height: 2;
-      margin: 0 0 20px;
-    }
-    .pain-closing {
-      margin: 32px 0 0;
-      color: var(--gold);
-      font-size: clamp(16px, 2.5vw, 20px);
-      font-weight: 500;
-      letter-spacing: 0.06em;
-      padding-top: 24px;
-      border-top: 1px solid #3a3020;
     }
 
     /* GRID & CARDS */
@@ -309,6 +272,26 @@
     .highlight-title { margin: 0 0 8px; color: #efe1bd; font-size: 16px; font-weight: 700; }
     .highlight-text { margin: 0; color: #ddd2bc; font-size: 14px; }
 
+    /* PAIN (short version) */
+    .pain-short {
+      border-left: 2px solid var(--gold-deep);
+      padding: 14px 18px;
+      background: #111009;
+    }
+    .pain-short p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 2;
+    }
+    .pain-short .pain-closing {
+      margin: 12px 0 0;
+      color: var(--gold);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+    }
+
     /* PRICE */
     .price-box { border: 1px solid #4b3f27; background: #15120d; padding: 22px 18px; }
     .price-label { margin: 0; color: #efe1bd; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; }
@@ -374,18 +357,9 @@
 
     /* VIDEO */
     .profile-video-wrap {
-      margin-top: 28px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 10px;
-    }
-    .profile-video-label {
-      color: var(--gold);
-      font-size: 12px;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      text-align: center;
     }
     .profile-video-container {
       position: relative;
@@ -434,21 +408,9 @@
     <div class="hero-card-wrap">
       <div class="wrap">
         <div class="hero-card">
-          <p class="eyebrow">GOZIKARA KOBE / 神戸市中央区の経営者・役員向け</p>
-          <h1 class="hero-title">経営者が整う時間は、<br>仕事の前にある。</h1>
-          <p class="hero-lead">
-            GOZIKARAは、神戸市中央区の経営者・役員のための、超早朝・完全出張型コンディショニングです。
-            朝5:00 / 7:15の90分で、鍼灸・整体/姿勢調整・体幹トレーニングを状態に合わせて組み合わせ、
-            朝から仕事に向かいやすい状態づくりをお手伝いします。
-          </p>
-          <div class="chips">
-            <span class="chip">神戸市中央区の経営者・役員向け</span>
-            <span class="chip">平日朝 5:00 / 7:15</span>
-            <span class="chip">90分</span>
-            <span class="chip">1日2枠のみ</span>
-            <span class="chip">完全出張</span>
-            <span class="chip">初回 9,900円（税・出張費込）</span>
-          </div>
+          <p class="eyebrow">GOZIKARA KOBE</p>
+          <h1 class="hero-title">経営者が倒れれば、<br>すべてが止まる。</h1>
+          <p class="hero-subhead">神戸市中央区の経営者・役員向け｜平日朝5時〜完全出張｜90分¥9,900</p>
           <div class="cta-box">
             <div class="monitor-badge">現在、モニター価格での受付中。定員5名に達し次第、通常料金に移行します。</div>
             <a class="btn btn-primary" href="https://line.me/R/ti/p/%40125jdpmw" target="_blank" rel="noopener">初回体験を希望する</a>
@@ -463,24 +425,48 @@
 
   <main>
 
-    <!-- PAIN SECTION -->
-    <section class="section pain-section">
+    <!-- VIDEO -->
+    <section class="section">
       <div class="wrap">
-        <p class="eyebrow">For Executives</p>
-        <h2 class="section-title pain-title">経営者がセルフケアを<br>後回しにする、理由がある。</h2>
-        <p class="pain-body">
-          日中は判断と会話で消耗し、夜は会食か積み残しの処理。<br>
-          週末は、せめて家族との時間を守りたい。
-        </p>
-        <p class="pain-body">
-          整体や運動が必要だとわかっていても、<br>
-          それを入れる時間が、どこにも見当たらない。
-        </p>
-        <p class="pain-body">
-          結果として、体は少しずつ蓄積し、<br>
-          集中のムラや疲れの抜けにくさが、仕事にも滲み出てくる。
-        </p>
-        <p class="pain-closing">それは意志の問題ではなく、構造の問題です。</p>
+        <div class="profile-video-wrap">
+          <div class="profile-video-container">
+            <iframe
+              src="https://www.youtube.com/embed/pJaVYiyh2io?rel=0&modestbranding=1"
+              title="GOZIKARA KOBE 担当者メッセージ"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFILE -->
+    <section class="section">
+      <div class="wrap profile">
+        <div class="profile-image">
+          <img src="profile.png" alt="GOZIKARA KOBE 森本剛一郎 プロフィール写真" />
+        </div>
+        <div class="profile-box">
+          <p class="profile-role">THERAPIST PROFILE</p>
+          <h2 class="profile-heading">経営者の朝を、整えます。</h2>
+          <p style="margin: -8px 0 16px; font-size: 18px; font-weight: 700; color: var(--white); letter-spacing: 0.06em;">森本 剛一郎 <span style="font-size: 12px; color: var(--subtle); letter-spacing: 0.12em; margin-left: 8px;">MORIMOTO KOICHIRO</span></p>
+          <p class="profile-text">
+            お客様のその日の身体の状態を見極め、鍼・整体・トレーニングを組み合わせます。
+          </p>
+          <p class="profile-text">
+            経営者・役員の方に必要なのは、仕事終わりの回復だけではなく、仕事前に整った状態で1日を始めることだと考えています。そのためGOZIKARAでは、一律の施術ではなく、朝の90分で無理なく整えられる構成を大切にしています。
+          </p>
+          <p class="profile-text">
+            また、初回体験後も無理な継続提案は行いません。必要な方にのみ、継続プランをご案内しています。
+          </p>
+          <ul class="credential-list">
+            <li style="font-size:12px; line-height:1.8;">鍼灸師｜柔道整復師（国家資格）</li>
+            <li style="font-size:12px; line-height:1.8;">株式会社 physical improve｜GOZIKARA KOBE 代表</li>
+            <li style="font-size:12px; line-height:1.8;">アスレティックトレーナー｜アシュタンガヨガ神戸 専属トレーナー</li>
+            <li style="font-size:12px; line-height:1.8;">一般社団法人ヨガアーサナ連盟 公認トレーナー</li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -493,17 +479,8 @@
           <p class="section-lead">
             GOZIKARAは、単なる出張整体ではありません。
             経営者が、仕事前に自分を整えるための時間として設計した、朝専用のコンディショニングです。
-          </p>
-          <div style="height:16px;"></div>
-          <p class="section-lead">
             体の違和感だけを見るのではなく、その日の集中しやすさ、姿勢の安定、思考の切り替えやすさまで見据えながら、
             その朝の状態に合わせて内容を組み立てます。
-          </p>
-          <div style="height:16px;"></div>
-          <p class="section-lead">
-            「健康のために何かを足す」のではなく、
-            仕事を始める前に、自分の土台を静かに整える。
-            そのための90分です。
           </p>
         </div>
         <div class="highlight-box">
@@ -525,9 +502,6 @@
         <p class="section-lead">
           経営者や役員は、日中に多くの判断を重ねます。だからこそ、疲れてから整えるより、
           仕事に入る前の静かな時間に、姿勢・呼吸・体の使い方を見直しておく方が合う方もいます。
-        </p>
-        <div style="height:18px;"></div>
-        <p class="section-lead">
           朝の90分で土台を整えておくことで、その日の仕事に入りやすくなる。
           GOZIKARAは、そうした感覚を大切にした設計です。
         </p>
@@ -597,47 +571,11 @@
       </div>
     </section>
 
-    <!-- PROFILE -->
-    <section class="section">
-      <div class="wrap profile">
-        <div class="profile-image">
-          <img src="profile.png" alt="GOZIKARA KOBE 森本剛一郎 プロフィール写真" />
-        </div>
-        <div class="profile-box">
-          <p class="profile-role">THERAPIST PROFILE</p>
-          <h2 class="profile-heading">経営者の朝を、整えます。</h2>
-          <p style="margin: -8px 0 16px; font-size: 18px; font-weight: 700; color: var(--white); letter-spacing: 0.06em;">森本 剛一郎 <span style="font-size: 12px; color: var(--subtle); letter-spacing: 0.12em; margin-left: 8px;">MORIMOTO KOICHIRO</span></p>
-          <p class="profile-text">
-            お客様のその日の身体の状態を見極め、鍼・整体・トレーニングを組み合わせます。
-          </p>
-          <p class="profile-text">
-            経営者・役員の方に必要なのは、仕事終わりの回復だけではなく、仕事前に整った状態で1日を始めることだと考えています。そのためGOZIKARAでは、一律の施術ではなく、朝の90分で無理なく整えられる構成を大切にしています。
-          </p>
-          <p class="profile-text">
-            また、初回体験後も無理な継続提案は行いません。必要な方にのみ、継続プランをご案内しています。
-          </p>
-          <ul class="credential-list">
-            <li style="font-size:12px; line-height:1.8;">鍼灸師｜柔道整復師（国家資格）</li>
-            <li style="font-size:12px; line-height:1.8;">株式会社 physical improve｜GOZIKARA KOBE 代表</li>
-            <li style="font-size:12px; line-height:1.8;">アスレティックトレーナー｜アシュタンガヨガ神戸 専属トレーナー</li>
-            <li style="font-size:12px; line-height:1.8;">一般社団法人ヨガアーサナ連盟 公認トレーナー</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- VIDEO -->
+    <!-- PAIN (short) -->
     <section class="section">
       <div class="wrap">
-        <div class="profile-video-wrap">
-          <div class="profile-video-container">
-            <iframe
-              src="https://www.youtube.com/embed/pJaVYiyh2io?rel=0&modestbranding=1"
-              title="GOZIKARA KOBE 担当者メッセージ"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-            </iframe>
-          </div>
+        <div class="pain-short">
+          <p>整体や運動が必要だとわかっていても、それを入れる時間がどこにも見当たらない。<br>それは意志の問題ではなく、構造の問題です。GOZIKARAはその構造ごと解決するために設計されています。</p>
         </div>
       </div>
     </section>
