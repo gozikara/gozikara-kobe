@@ -361,6 +361,38 @@
     .sticky-cta .btn { min-height: 54px; font-size: 14px; }
     .sticky-note { margin: 8px 0 0; text-align: center; color: var(--subtle); font-size: 11px; }
 
+    /* VIDEO */
+    .profile-video-wrap {
+      margin-top: 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .profile-video-label {
+      color: var(--gold);
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    .profile-video-container {
+      position: relative;
+      width: 100%;
+      max-width: 280px;
+      aspect-ratio: 9 / 16;
+      border: 1px solid var(--line);
+      overflow: hidden;
+      background: #000;
+    }
+    .profile-video-container iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
     /* DESKTOP */
     @media (min-width: 768px) {
       .wrap { width: min(calc(100% - 64px), var(--max)); }
@@ -578,6 +610,22 @@
             <li style="font-size:12px; line-height:1.8;">アスレティックトレーナー｜アシュタンガヨガ神戸 専属トレーナー</li>
             <li style="font-size:12px; line-height:1.8;">一般社団法人ヨガアーサナ連盟 公認トレーナー</li>
           </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO -->
+    <section class="section">
+      <div class="wrap">
+        <div class="profile-video-wrap">
+          <div class="profile-video-container">
+            <iframe
+              src="https://www.youtube.com/embed/pJaVYiyh2io?rel=0&modestbranding=1"
+              title="GOZIKARA KOBE 担当者メッセージ"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
         </div>
       </div>
     </section>
